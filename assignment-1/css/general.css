@@ -1,0 +1,86 @@
+h1 {
+    font-size: 36px;
+    font-family: "Merriweather", serif;
+    color: green
+}
+
+h2 {
+    font-size: small;
+    font-family: "Lato", sans-serif;
+    color: rgb(0, 114, 179)
+}
+
+h2 a {
+    font-weight: 800;
+    color: purple
+}
+
+img {
+    width: 960px;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    width: 960px;
+}
+
+.intro {
+    font-weight: 800;
+}
+
+a.highlight {
+    text-decoration: none;
+    color: rgb(185, 60, 141);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.people {
+    font-weight: 800;
+    color: purple;
+}
+
+.merriweather-300 {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}

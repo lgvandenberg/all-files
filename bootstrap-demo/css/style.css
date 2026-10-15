@@ -1,0 +1,266 @@
+/* COLORS (change these to re-theme the whole page) */
+:root {
+    --pink: #ff5fa2;
+    --pink-dark: #c2255f;
+    --blush: #fff0f7;
+    --aqua: #1fb5b0;
+    --aqua-dark: #0e7c78;
+    --aqua-light: #e3f6f5;
+    --ink: #2b1a3d;
+}
+
+/* PAGE */
+body {
+    background-color: #f1eef4;
+    font-family: "Lato", Arial, sans-serif;
+    color: #222222;
+}
+
+.container {
+    background-color: #ffffff;
+    max-width: 1140px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 30px 30px;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADER */
+header {
+    padding: 25px;
+    border-bottom: 4px solid var(--pink);
+    margin-bottom: 30px;
+}
+
+.header-logo {
+    width: 350px;
+}
+
+/* NAVBAR */
+.nav-link {
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.nav-link:hover {
+    color: var(--pink-dark);
+}
+
+/* JUMBOTRON */
+.jumbotron-hero {
+    background-color: var(--aqua-light);
+    color: var(--ink);
+    border-radius: 1rem;
+    border-bottom: 6px solid var(--pink);
+}
+
+.jumbotron-hero h2 {
+    font-family: "Merriweather", Georgia, serif;
+}
+
+/* BUTTONS */
+.btn-main {
+    background-color: var(--pink-dark);
+    color: #ffffff;
+    border: 2px solid var(--pink-dark);
+}
+
+.btn-main:hover {
+    background-color: var(--ink);
+    border-color: var(--ink);
+    color: #ffffff;
+}
+
+.btn-outline-main {
+    background-color: transparent;
+    color: var(--pink-dark);
+    border: 2px solid var(--pink-dark);
+}
+
+.btn-outline-main:hover {
+    background-color: var(--pink-dark);
+    color: #ffffff;
+}
+
+/* ARTICLE */
+h1 {
+    font-size: 36px;
+    font-family: "Merriweather", Georgia, serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.headline-pink {
+    color: var(--pink-dark);
+}
+
+.quote-mark {
+    color: var(--pink);
+}
+
+article h2 {
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 35px 0 15px;
+    padding-left: 12px;
+    border-left: 5px solid var(--pink);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 19px;
+}
+
+.byline {
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+.byline a {
+    font-weight: 700;
+    color: var(--pink-dark);
+}
+
+.intro {
+    font-weight: 900;
+}
+
+/* STATS STRIP */
+.stats {
+    background-color: var(--blush);
+    border-radius: 0.75rem;
+    padding: 20px 10px;
+}
+
+.stat-number {
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--pink-dark);
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #555555;
+}
+
+/* PULL QUOTE */
+.pull-quote {
+    border-left: 5px solid var(--pink);
+    background-color: var(--aqua-light);
+    border-radius: 0 0.75rem 0.75rem 0;
+    padding: 20px 24px;
+    margin: 25px 0;
+}
+
+.pull-quote p {
+    font-family: "Merriweather", Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.pull-quote .quote-by {
+    font-family: "Lato", Arial, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 0;
+}
+
+/* ASIDE */
+aside {
+    background-color: #faf7fb;
+    border-top: 4px solid var(--pink);
+    border-radius: 0 0 0.75rem 0.75rem;
+    padding: 20px;
+}
+
+aside h2 {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--pink);
+    margin-bottom: 15px;
+}
+
+.list-group-item {
+    font-size: 16px;
+    line-height: 1.4;
+    border-left: 4px solid transparent;
+}
+
+.list-group-item:hover {
+    border-left-color: var(--pink);
+    color: var(--pink-dark);
+    text-decoration: none;
+}
+
+.good-to-know {
+    margin-top: 20px;
+    padding: 12px 14px;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: var(--aqua-light);
+    border-radius: 0.5rem;
+    color: var(--ink);
+}
+
+.good-to-know .bi {
+    color: var(--aqua-dark);
+    margin-right: 4px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--ink);
+    color: #cccccc;
+    padding: 30px 15px;
+    margin-top: 40px;
+    border-radius: 0.75rem;
+}
+
+.footer-brand {
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: -1px;
+    color: var(--pink);
+}
+
+footer .list-inline {
+    margin-bottom: 8px;
+}
+
+footer .list-inline-item a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer .list-inline-item a:hover {
+    color: var(--pink);
+}
+
+.copyright {
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin-left: 14px;
+    color: #ffffff;
+}
+
+.social-icon:hover {
+    color: var(--aqua);
+    text-decoration: none;
+}
