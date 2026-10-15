@@ -18,7 +18,7 @@ body {
 header {
     padding: 25px;
     border-bottom: 4px solid #0a9e01;
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 
 .header-logo {
