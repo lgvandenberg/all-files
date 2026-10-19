@@ -18,7 +18,6 @@ body {
 header {
     padding: 25px;
     border-bottom: 4px solid #0a9e01;
-    margin-bottom: 0;
 }
 
 .header-logo {
@@ -40,9 +39,8 @@ header {
     padding: 10px 16px;
 }
 
-.main-nav .nav-link:hover,
-.main-nav .nav-link.active {
-    color: #0a9e01;
+.main-nav .nav-link:hover {
+    color: #067a00;
 }
 
 /* ARTICLE */
@@ -62,7 +60,6 @@ h1 {
 }
 
 p {
-    font-size: 16px;
     line-height: 1.75;
     margin-bottom: 19px;
 }
@@ -75,7 +72,7 @@ p {
 
 .byline a {
     font-weight: 700;
-    color: #0a9e01;
+    color: #067a00;
 }
 
 figure {
@@ -84,7 +81,6 @@ figure {
 }
 
 figcaption {
-    text-align: center;
     font-style: italic;
     font-size: 14px;
     color: #666666;
@@ -105,8 +101,7 @@ a.highlight {
 }
 
 a.highlight:hover {
-    color: #0a9e01;
-    text-decoration-color: #0a9e01;
+    text-decoration-color: #067a00;
 }
 
 .quote {
@@ -125,7 +120,8 @@ aside {
     padding: 20px;
 }
 
-aside h2 {
+aside h2,
+.ymal-heading {
     font-size: 20px;
     font-weight: 900;
     text-transform: uppercase;
@@ -136,15 +132,48 @@ aside h2 {
 }
 
 .list-group-item {
-    font-size: 16px;
     line-height: 1.4;
     border-left: 4px solid transparent;
 }
 
 .list-group-item:hover {
-    border-left-color: #0a9e01;
-    color: #0a9e01;
+    border-left-color: #067a00;
+    color: #067a00;
+}
+
+/* YOU MIGHT ALSO LIKE */
+.ymal-box {
+    background-color: #f7f8f9;
+    border-top: 4px solid #0a9e01;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ymal-box:hover,
+.ymal-box:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.ymal-source {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #067a00;
+    margin-bottom: 8px;
+}
+
+.ymal-link {
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #222222;
     text-decoration: none;
+}
+
+.ymal-link:hover {
+    color: #067a00;
 }
 
 /* FOOTER */
@@ -181,10 +210,43 @@ footer .list-inline-item a:hover {
 .social-icon {
     font-size: 24px;
     margin-left: 14px;
+    margin: 0 7px;
     color: #ffffff;
 }
 
 .social-icon:hover {
     color: #0a9e01;
-    text-decoration: none;
+}
+
+/* HERO */
+.story-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/apps-scroll-through-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.story-hero .btn-success {
+    --bs-btn-bg: #067a00;
+    --bs-btn-border-color: #067a00;
+    --bs-btn-hover-bg: #055f00;
+    --bs-btn-hover-border-color: #055f00;
+    --bs-btn-active-bg: #044a00;
+    --bs-btn-active-border-color: #044a00;
+}
+
+
+/* FOCUS STYLES */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.navbar-toggler:focus-visible,
+.main-nav .nav-link:focus-visible {
+    outline: 3px solid #067a00;
+    outline-offset: 2px;
+    box-shadow: none;
+}
+
+footer a:focus-visible {
+    outline-color: #ffffff;
 }
